@@ -5,6 +5,9 @@ export default function Home() {
   return (
    <div>
     <h1>React com next js</h1>
+    <h2>aula de introdução</h2>
+    <h3>leiaute estilização</h3>
+    <p>nessa aula iremos aprender css global e local</p>
    </div>
   );
 }
