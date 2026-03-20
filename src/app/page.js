@@ -10,7 +10,7 @@ function Home() {
       <p>Nesta aula iremos entender o uso de CSS global e local.</p>
       <label>Exemplo Label</label>
       <small>Exemplo Small</small>
-      <link href="./atividades/atividade01.jsx">sla</link>
+      <a href="./atividades/atividade01.jsx">sla</a>
       <div className={styles.conteinerExPosicao}>
         <div className={styles.divVermelha}></div>
         <div className={styles.divVerde}></div>
