@@ -9,12 +9,16 @@ export default function Exemplo03() {
     function handleIncrementa () {
         setNum(num + 1);
     }
+    function handleDiminui () {
+        setNum(num - 1);
+    }
 
     return (
         <>
          <div className={styles.container}>
             <div className={styles.counter}>{`Contador: ${num}`}</div>
             <button className={styles.button} onClick={handleIncrementa}>+1</button>
+            <button className={styles.button} onClick={handleDiminui}>-1</button>
         </div>
         </>
         
