@@ -1,13 +1,14 @@
 .botao {
+    
     padding: 1rem 2rem;
     cursor: pointer;
     margin: 0.5rem;
 }
 
 .mais {
-    background-color: forestgreen;
+    background-color: rgb(255, 255, 255);
 }
 
 .menos {
-    background-color: tomato;
+    background-color: rgb(255, 0, 0);
 }
