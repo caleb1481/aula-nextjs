@@ -1,0 +1,130 @@
+/* Container Principal */
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Formulário Responsivo */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Inputs */
+.form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Botão */
+.form button {
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form button:hover {
+    background-color: #2563eb;
+}
+
+/* Lista de Itens */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.linha {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    animation: slideIn 0.3s ease-out;
+}
+
+.conteudo {
+    color: #334155;
+    font-weight: 500;
+}
+
+/* Animação simples ao adicionar */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Media Queries para Responsividade --- */
+
+@media (min-width: 480px) {
+
+    /* No desktop, os inputs ficam lado a lado */
+    .form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form input[type="number"] {
+        width: 80px;
+        /* Campo de quantidade menor */
+    }
+
+    .form input[type="text"] {
+        flex: 1;
+        /* Campo de produto ocupa o resto */
+    }
+
+    .form button {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .form button {
+        width: 100%;
+        /* Botão ocupa tudo no mobile */
+    }
+}
